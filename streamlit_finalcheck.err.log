@@ -1,0 +1,1635 @@
+2026-06-23 22:51:20 [INFO] aurassure_api: Fazendo login: theomar.neves@ufopa.edu.br
+2026-06-23 22:51:22 [INFO] aurassure_api: Sessão salva para 'Prof. Theomar Neves' (client_id=17429). Válida por ~55 min.
+2026-06-23 22:51:22 [INFO] aurassure_api: Listando locais: GET /clients/17429/applications/16/things/list
+2026-06-23 22:51:23 [INFO] aurassure_api: 4 local(is) encontrado(s): [('Campus Castanhal', 40303), ('Campus Santarem', 29067), ('Campus Itaituba', 28463), ('Campus Monte Alegre', 25248)]
+2026-06-23 22:51:24 [INFO] aurassure_api: Buscando dados: things=[40303] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:51:25 [INFO] aurassure_api: Normalizado: 0 linhas de 0 registros.
+2026-06-23 22:51:25 [INFO] aurassure_api: Buscando dados: things=[29067] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:51:29 [INFO] aurassure_api: Normalizado: 25676 linhas de 2568 registros.
+2026-06-23 22:51:29 [INFO] aurassure_api: Buscando dados: things=[28463] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:51:32 [INFO] aurassure_api: Normalizado: 11128 linhas de 1433 registros.
+2026-06-23 22:51:32 [INFO] aurassure_api: Buscando dados: things=[25248] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:51:36 [INFO] aurassure_api: Normalizado: 20812 linhas de 2675 registros.
+2026-06-23 22:51:36.856 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1332, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1326, in main
+    tela_relatorio(df, mapa, rot, modo_rel)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1147, in tela_relatorio
+    st.plotly_chart(g_ranking_locais(df, mapa, "aqi", "Campus com menor AQI medio"), use_container_width=True, key="ranking_aqi")
+                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 318, in g_ranking_locais
+    fig.update_layout(**LAYOUT, title=_tit(titulo), xaxis_title=param.upper(), yaxis_title="", showlegend=False)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: plotly.graph_objs._figure.Figure.update_layout() got multiple values for keyword argument 'showlegend'
+2026-06-23 22:57:36 [INFO] aurassure_api: Buscando dados: things=[40303] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:57:40 [INFO] aurassure_api: Normalizado: 0 linhas de 0 registros.
+2026-06-23 22:57:40 [INFO] aurassure_api: Buscando dados: things=[29067] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:57:47 [INFO] aurassure_api: Normalizado: 25676 linhas de 2568 registros.
+2026-06-23 22:57:48 [INFO] aurassure_api: Buscando dados: things=[28463] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:57:54 [INFO] aurassure_api: Normalizado: 11128 linhas de 1433 registros.
+2026-06-23 22:57:54 [INFO] aurassure_api: Buscando dados: things=[25248] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 22:58:03 [INFO] aurassure_api: Normalizado: 20812 linhas de 2675 registros.
+2026-06-23 22:58:04.299 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.472 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.515 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.544 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.592 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.631 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.703 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.740 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.764 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.787 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.825 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.863 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.924 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.964 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:04.987 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.011 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.056 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.090 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.147 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.179 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.199 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.219 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.254 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.289 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:05.305 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 22:58:20 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:20 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:20 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpwfrylygo.
+2026-06-23 22:58:20 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:20 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp1jea5dzr.
+2026-06-23 22:58:20 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp1jea5dzr
+2026-06-23 22:58:21 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpwfrylygo/index.html
+2026-06-23 22:58:21 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Got 7A89
+2026-06-23 22:58:23 [INFO] kaleido._kaleido_tab: Processing AQI___Comparativo.png
+2026-06-23 22:58:23 [INFO] kaleido._kaleido_tab: Sending big command for AQI___Comparativo.png.
+2026-06-23 22:58:23 [INFO] kaleido._kaleido_tab: Sent big command for AQI___Comparativo.png.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Reloading tab 7A89 before return.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Putting tab 7A89 back (queue size: 0).
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:23 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:23 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:23 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:23 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:23 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp68vf8j3l.
+2026-06-23 22:58:23 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:23 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpun4r476j.
+2026-06-23 22:58:23 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpun4r476j
+2026-06-23 22:58:24 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp68vf8j3l/index.html
+2026-06-23 22:58:24 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:25 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:25 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:25 [INFO] kaleido.kaleido: Got FD33
+2026-06-23 22:58:25 [INFO] kaleido._kaleido_tab: Processing AQI.png
+2026-06-23 22:58:25 [INFO] kaleido._kaleido_tab: Sending big command for AQI.png.
+2026-06-23 22:58:26 [INFO] kaleido._kaleido_tab: Sent big command for AQI.png.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Reloading tab FD33 before return.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Putting tab FD33 back (queue size: 0).
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:26 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:26 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:26 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:26 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp43syao6y.
+2026-06-23 22:58:26 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:26 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpq929nx3j.
+2026-06-23 22:58:26 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpq929nx3j
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp43syao6y/index.html
+2026-06-23 22:58:26 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Got 489F
+2026-06-23 22:58:29 [INFO] kaleido._kaleido_tab: Processing PM25.png
+2026-06-23 22:58:29 [INFO] kaleido._kaleido_tab: Sending big command for PM25.png.
+2026-06-23 22:58:29 [INFO] kaleido._kaleido_tab: Sent big command for PM25.png.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Reloading tab 489F before return.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Putting tab 489F back (queue size: 0).
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:29 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:29 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:29 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:29 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:29 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp_t9i4h_s.
+2026-06-23 22:58:29 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:29 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp7l9woyji.
+2026-06-23 22:58:29 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp7l9woyji
+2026-06-23 22:58:30 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp_t9i4h_s/index.html
+2026-06-23 22:58:30 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:31 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:31 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:31 [INFO] kaleido.kaleido: Got 3153
+2026-06-23 22:58:31 [INFO] kaleido._kaleido_tab: Processing Temperatura.png
+2026-06-23 22:58:31 [INFO] kaleido._kaleido_tab: Sending big command for Temperatura.png.
+2026-06-23 22:58:32 [INFO] kaleido._kaleido_tab: Sent big command for Temperatura.png.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Reloading tab 3153 before return.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Putting tab 3153 back (queue size: 0).
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:32 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:32 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:32 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:32 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpj65o_mw2.
+2026-06-23 22:58:32 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:32 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpv68hapoy.
+2026-06-23 22:58:32 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpv68hapoy
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpj65o_mw2/index.html
+2026-06-23 22:58:32 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Got AF54
+2026-06-23 22:58:35 [INFO] kaleido._kaleido_tab: Processing Umidade.png
+2026-06-23 22:58:35 [INFO] kaleido._kaleido_tab: Sending big command for Umidade.png.
+2026-06-23 22:58:35 [INFO] kaleido._kaleido_tab: Sent big command for Umidade.png.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Reloading tab AF54 before return.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Putting tab AF54 back (queue size: 0).
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:35 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:35 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:35 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:35 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:35 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpdjqnbssx.
+2026-06-23 22:58:35 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:35 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpes5gof7l.
+2026-06-23 22:58:35 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpes5gof7l
+2026-06-23 22:58:36 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpdjqnbssx/index.html
+2026-06-23 22:58:36 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:37 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:37 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:37 [INFO] kaleido.kaleido: Got F5FE
+2026-06-23 22:58:37 [INFO] kaleido._kaleido_tab: Processing CO2.png
+2026-06-23 22:58:37 [INFO] kaleido._kaleido_tab: Sending big command for CO2.png.
+2026-06-23 22:58:38 [INFO] kaleido._kaleido_tab: Sent big command for CO2.png.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Reloading tab F5FE before return.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Putting tab F5FE back (queue size: 0).
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:38 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:38 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:38 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:38 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp4hlwhmk7.
+2026-06-23 22:58:38 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:38 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp0dxbujs1.
+2026-06-23 22:58:38 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp0dxbujs1
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp4hlwhmk7/index.html
+2026-06-23 22:58:38 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:40 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:40 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:40 [INFO] kaleido.kaleido: Got 162A
+2026-06-23 22:58:40 [INFO] kaleido._kaleido_tab: Processing NO2.png
+2026-06-23 22:58:41 [INFO] kaleido._kaleido_tab: Sending big command for NO2.png.
+2026-06-23 22:58:41 [INFO] kaleido._kaleido_tab: Sent big command for NO2.png.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Reloading tab 162A before return.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Putting tab 162A back (queue size: 0).
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:41 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:41 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:41 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:41 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:41 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpg0lml_43.
+2026-06-23 22:58:41 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:41 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp098nj_qq.
+2026-06-23 22:58:41 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp098nj_qq
+2026-06-23 22:58:42 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpg0lml_43/index.html
+2026-06-23 22:58:42 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Got 2121
+2026-06-23 22:58:44 [INFO] kaleido._kaleido_tab: Processing Media_diaria___AQI.png
+2026-06-23 22:58:44 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___AQI.png.
+2026-06-23 22:58:44 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___AQI.png.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Reloading tab 2121 before return.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Putting tab 2121 back (queue size: 0).
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:44 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:44 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:44 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:44 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:44 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:45 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:45 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:45 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:45 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmppebjtx6k.
+2026-06-23 22:58:45 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:45 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp4vvcdvqe.
+2026-06-23 22:58:45 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp4vvcdvqe
+2026-06-23 22:58:45 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmppebjtx6k/index.html
+2026-06-23 22:58:45 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Got 8447
+2026-06-23 22:58:48 [INFO] kaleido._kaleido_tab: Processing Media_diaria___PM25.png
+2026-06-23 22:58:48 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___PM25.png.
+2026-06-23 22:58:48 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___PM25.png.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Reloading tab 8447 before return.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Putting tab 8447 back (queue size: 0).
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:48 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:48 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:48 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:48 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:48 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpcaxb6pqp.
+2026-06-23 22:58:48 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:48 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpjb0c87_p.
+2026-06-23 22:58:48 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpjb0c87_p
+2026-06-23 22:58:49 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpcaxb6pqp/index.html
+2026-06-23 22:58:49 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:51 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:51 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:51 [INFO] kaleido.kaleido: Got C1A7
+2026-06-23 22:58:51 [INFO] kaleido._kaleido_tab: Processing PM1__PM25__PM10.png
+2026-06-23 22:58:51 [INFO] kaleido._kaleido_tab: Sending big command for PM1__PM25__PM10.png.
+2026-06-23 22:58:51 [INFO] kaleido._kaleido_tab: Sent big command for PM1__PM25__PM10.png.
+2026-06-23 22:58:51 [INFO] kaleido.kaleido: Reloading tab C1A7 before return.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Putting tab C1A7 back (queue size: 0).
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:52 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:52 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:52 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:52 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpb3uzctzw.
+2026-06-23 22:58:52 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:52 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpdi6wlitw.
+2026-06-23 22:58:52 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpdi6wlitw
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpb3uzctzw/index.html
+2026-06-23 22:58:52 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Got 6F08
+2026-06-23 22:58:54 [INFO] kaleido._kaleido_tab: Processing AQI.png
+2026-06-23 22:58:54 [INFO] kaleido._kaleido_tab: Sending big command for AQI.png.
+2026-06-23 22:58:54 [INFO] kaleido._kaleido_tab: Sent big command for AQI.png.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Reloading tab 6F08 before return.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Putting tab 6F08 back (queue size: 0).
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:54 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:54 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:54 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:54 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:54 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp79deav7b.
+2026-06-23 22:58:54 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:54 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpszakd0x7.
+2026-06-23 22:58:54 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpszakd0x7
+2026-06-23 22:58:55 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp79deav7b/index.html
+2026-06-23 22:58:55 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:58:56 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:58:56 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:58:56 [INFO] kaleido.kaleido: Got 712A
+2026-06-23 22:58:56 [INFO] kaleido._kaleido_tab: Processing PM25.png
+2026-06-23 22:58:56 [INFO] kaleido._kaleido_tab: Sending big command for PM25.png.
+2026-06-23 22:58:57 [INFO] kaleido._kaleido_tab: Sent big command for PM25.png.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Reloading tab 712A before return.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Putting tab 712A back (queue size: 0).
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:58:57 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:57 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:58:57 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:58:57 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp0yg6c6d3.
+2026-06-23 22:58:57 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:58:57 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpmayma33m.
+2026-06-23 22:58:57 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpmayma33m
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp0yg6c6d3/index.html
+2026-06-23 22:58:57 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Got 69DD
+2026-06-23 22:59:00 [INFO] kaleido._kaleido_tab: Processing Temperatura.png
+2026-06-23 22:59:00 [INFO] kaleido._kaleido_tab: Sending big command for Temperatura.png.
+2026-06-23 22:59:00 [INFO] kaleido._kaleido_tab: Sent big command for Temperatura.png.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Reloading tab 69DD before return.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Putting tab 69DD back (queue size: 0).
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:00 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:00 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:00 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:00 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:00 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpknu7bdt1.
+2026-06-23 22:59:00 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:00 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpjdc9z1qf.
+2026-06-23 22:59:00 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpjdc9z1qf
+2026-06-23 22:59:01 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpknu7bdt1/index.html
+2026-06-23 22:59:01 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:03 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:03 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:03 [INFO] kaleido.kaleido: Got 79C0
+2026-06-23 22:59:03 [INFO] kaleido._kaleido_tab: Processing Umidade.png
+2026-06-23 22:59:03 [INFO] kaleido._kaleido_tab: Sending big command for Umidade.png.
+2026-06-23 22:59:04 [INFO] kaleido._kaleido_tab: Sent big command for Umidade.png.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Reloading tab 79C0 before return.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Putting tab 79C0 back (queue size: 0).
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:04 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:04 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:04 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:04 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpc7ynumuo.
+2026-06-23 22:59:04 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:04 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmppkq0oh54.
+2026-06-23 22:59:04 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmppkq0oh54
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpc7ynumuo/index.html
+2026-06-23 22:59:04 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Got 542F
+2026-06-23 22:59:06 [INFO] kaleido._kaleido_tab: Processing CO2.png
+2026-06-23 22:59:06 [INFO] kaleido._kaleido_tab: Sending big command for CO2.png.
+2026-06-23 22:59:06 [INFO] kaleido._kaleido_tab: Sent big command for CO2.png.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Reloading tab 542F before return.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Putting tab 542F back (queue size: 0).
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:06 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:06 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:06 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:06 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpsv8eschm.
+2026-06-23 22:59:06 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:06 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpkdir0xc1.
+2026-06-23 22:59:06 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpkdir0xc1
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpsv8eschm/index.html
+2026-06-23 22:59:06 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Got 6086
+2026-06-23 22:59:08 [INFO] kaleido._kaleido_tab: Processing NO2.png
+2026-06-23 22:59:08 [INFO] kaleido._kaleido_tab: Sending big command for NO2.png.
+2026-06-23 22:59:08 [INFO] kaleido._kaleido_tab: Sent big command for NO2.png.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Reloading tab 6086 before return.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Putting tab 6086 back (queue size: 0).
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:08 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:08 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:08 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:08 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:08 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpjo0i1wys.
+2026-06-23 22:59:08 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:08 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpgc2mib83.
+2026-06-23 22:59:08 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpgc2mib83
+2026-06-23 22:59:09 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpjo0i1wys/index.html
+2026-06-23 22:59:09 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:11 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Got 6075
+2026-06-23 22:59:12 [INFO] kaleido._kaleido_tab: Processing Media_diaria___AQI.png
+2026-06-23 22:59:12 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___AQI.png.
+2026-06-23 22:59:12 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___AQI.png.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Reloading tab 6075 before return.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Putting tab 6075 back (queue size: 0).
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:12 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:12 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:12 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:12 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpr1g7udby.
+2026-06-23 22:59:12 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:12 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp29ppsq9u.
+2026-06-23 22:59:12 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp29ppsq9u
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpr1g7udby/index.html
+2026-06-23 22:59:12 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Got 811C
+2026-06-23 22:59:14 [INFO] kaleido._kaleido_tab: Processing Media_diaria___PM25.png
+2026-06-23 22:59:14 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___PM25.png.
+2026-06-23 22:59:14 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___PM25.png.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Reloading tab 811C before return.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Putting tab 811C back (queue size: 0).
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:14 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:14 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:14 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:14 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:14 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmptsmlrubz.
+2026-06-23 22:59:14 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:14 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpyodrlbtd.
+2026-06-23 22:59:14 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpyodrlbtd
+2026-06-23 22:59:15 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmptsmlrubz/index.html
+2026-06-23 22:59:15 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:16 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Got FBE9
+2026-06-23 22:59:17 [INFO] kaleido._kaleido_tab: Processing PM1__PM25__PM10.png
+2026-06-23 22:59:17 [INFO] kaleido._kaleido_tab: Sending big command for PM1__PM25__PM10.png.
+2026-06-23 22:59:17 [INFO] kaleido._kaleido_tab: Sent big command for PM1__PM25__PM10.png.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Reloading tab FBE9 before return.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Putting tab FBE9 back (queue size: 0).
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:17 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:17 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:17 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:17 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:17 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmprbk4btua.
+2026-06-23 22:59:17 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:17 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpubog2xtv.
+2026-06-23 22:59:17 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpubog2xtv
+2026-06-23 22:59:18 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmprbk4btua/index.html
+2026-06-23 22:59:18 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Got 4180
+2026-06-23 22:59:20 [INFO] kaleido._kaleido_tab: Processing AQI.png
+2026-06-23 22:59:20 [INFO] kaleido._kaleido_tab: Sending big command for AQI.png.
+2026-06-23 22:59:20 [INFO] kaleido._kaleido_tab: Sent big command for AQI.png.
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Reloading tab 4180 before return.
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Putting tab 4180 back (queue size: 0).
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:20 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:20 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:21 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:21 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:21 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmprbg3c5xh.
+2026-06-23 22:59:21 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:21 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpyogxgwky.
+2026-06-23 22:59:21 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpyogxgwky
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmprbg3c5xh/index.html
+2026-06-23 22:59:21 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:22 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Got A7A4
+2026-06-23 22:59:23 [INFO] kaleido._kaleido_tab: Processing PM25.png
+2026-06-23 22:59:23 [INFO] kaleido._kaleido_tab: Sending big command for PM25.png.
+2026-06-23 22:59:23 [INFO] kaleido._kaleido_tab: Sent big command for PM25.png.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Reloading tab A7A4 before return.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Putting tab A7A4 back (queue size: 0).
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:23 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:23 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:23 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:23 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpxueev84a.
+2026-06-23 22:59:23 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:23 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpmgkayfgf.
+2026-06-23 22:59:23 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpmgkayfgf
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpxueev84a/index.html
+2026-06-23 22:59:23 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Got F9B6
+2026-06-23 22:59:25 [INFO] kaleido._kaleido_tab: Processing Temperatura.png
+2026-06-23 22:59:25 [INFO] kaleido._kaleido_tab: Sending big command for Temperatura.png.
+2026-06-23 22:59:25 [INFO] kaleido._kaleido_tab: Sent big command for Temperatura.png.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Reloading tab F9B6 before return.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Putting tab F9B6 back (queue size: 0).
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:25 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:25 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:25 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:25 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:25 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:25 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:25 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:26 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:26 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:26 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:26 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:26 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:26 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:26 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpqcz4vcvl.
+2026-06-23 22:59:26 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:26 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp5i8282ux.
+2026-06-23 22:59:26 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp5i8282ux
+2026-06-23 22:59:26 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpqcz4vcvl/index.html
+2026-06-23 22:59:26 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Got AEFD
+2026-06-23 22:59:29 [INFO] kaleido._kaleido_tab: Processing Umidade.png
+2026-06-23 22:59:29 [INFO] kaleido._kaleido_tab: Sending big command for Umidade.png.
+2026-06-23 22:59:29 [INFO] kaleido._kaleido_tab: Sent big command for Umidade.png.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Reloading tab AEFD before return.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Putting tab AEFD back (queue size: 0).
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:29 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:29 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:29 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:29 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:29 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpms2nkmh_.
+2026-06-23 22:59:29 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:29 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmppftfucfb.
+2026-06-23 22:59:29 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmppftfucfb
+2026-06-23 22:59:30 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpms2nkmh_/index.html
+2026-06-23 22:59:30 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Got 2DA6
+2026-06-23 22:59:31 [INFO] kaleido._kaleido_tab: Processing CO2.png
+2026-06-23 22:59:31 [INFO] kaleido._kaleido_tab: Sending big command for CO2.png.
+2026-06-23 22:59:31 [INFO] kaleido._kaleido_tab: Sent big command for CO2.png.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Reloading tab 2DA6 before return.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Putting tab 2DA6 back (queue size: 0).
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:31 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:31 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:31 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:31 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:31 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:32 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:32 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:32 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:32 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp5irvocw3.
+2026-06-23 22:59:32 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:32 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpdby7p5bo.
+2026-06-23 22:59:32 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpdby7p5bo
+2026-06-23 22:59:32 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp5irvocw3/index.html
+2026-06-23 22:59:32 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Got 9F11
+2026-06-23 22:59:35 [INFO] kaleido._kaleido_tab: Processing NO2.png
+2026-06-23 22:59:35 [INFO] kaleido._kaleido_tab: Sending big command for NO2.png.
+2026-06-23 22:59:35 [INFO] kaleido._kaleido_tab: Sent big command for NO2.png.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Reloading tab 9F11 before return.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Putting tab 9F11 back (queue size: 0).
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:35 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:35 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:35 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:35 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:35 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp_vloxcg5.
+2026-06-23 22:59:35 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:35 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpgyullkjs.
+2026-06-23 22:59:35 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpgyullkjs
+2026-06-23 22:59:36 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp_vloxcg5/index.html
+2026-06-23 22:59:36 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Got B271
+2026-06-23 22:59:39 [INFO] kaleido._kaleido_tab: Processing Media_diaria___AQI.png
+2026-06-23 22:59:39 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___AQI.png.
+2026-06-23 22:59:39 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___AQI.png.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Reloading tab B271 before return.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Putting tab B271 back (queue size: 0).
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:39 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:39 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:39 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:39 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:39 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpf821oslp.
+2026-06-23 22:59:39 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:39 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp0gho0glp.
+2026-06-23 22:59:39 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmp0gho0glp
+2026-06-23 22:59:40 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmpf821oslp/index.html
+2026-06-23 22:59:40 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Got 6248
+2026-06-23 22:59:41 [INFO] kaleido._kaleido_tab: Processing Media_diaria___PM25.png
+2026-06-23 22:59:41 [INFO] kaleido._kaleido_tab: Sending big command for Media_diaria___PM25.png.
+2026-06-23 22:59:41 [INFO] kaleido._kaleido_tab: Sent big command for Media_diaria___PM25.png.
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Reloading tab 6248 before return.
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Putting tab 6248 back (queue size: 0).
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:41 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:41 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:42 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:42 [INFO] choreographer.browsers.chromium: Chromium init'ed with kwargs {}
+2026-06-23 22:59:42 [INFO] choreographer.browsers.chromium: Found chromium path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmp1y5dxmm9.
+2026-06-23 22:59:42 [INFO] choreographer.browser_async: Opening browser.
+2026-06-23 22:59:42 [INFO] choreographer.utils._tmpfile: Temp directory created: C:\Users\Maroth\AppData\Local\Temp\tmpbte5obv8.
+2026-06-23 22:59:42 [INFO] choreographer.browsers.chromium: Temporary directory at: C:\Users\Maroth\AppData\Local\Temp\tmpbte5obv8
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Conforming 1 to file:///C:/Users/Maroth/AppData/Local/Temp/tmp1y5dxmm9/index.html
+2026-06-23 22:59:42 [INFO] kaleido.kaleido: Waiting on all navigates
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: All navigates done, putting them all in queue.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Getting tab from queue (has 1)
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Got A29A
+2026-06-23 22:59:44 [INFO] kaleido._kaleido_tab: Processing PM1__PM25__PM10.png
+2026-06-23 22:59:44 [INFO] kaleido._kaleido_tab: Sending big command for PM1__PM25__PM10.png.
+2026-06-23 22:59:44 [INFO] kaleido._kaleido_tab: Sent big command for PM1__PM25__PM10.png.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Reloading tab A29A before return.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Putting tab A29A back (queue size: 0).
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Waiting for all cleanups to finish.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Exiting Kaleido
+2026-06-23 22:59:44 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:44 [INFO] choreographer.browser_async: Closing browser.
+2026-06-23 22:59:44 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:44 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:44 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] kaleido.kaleido: Cancelling tasks.
+2026-06-23 22:59:45 [INFO] kaleido.kaleido: Exiting Kaleido/Choreo
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: TemporaryDirectory.cleanup() worked.
+2026-06-23 22:59:45 [INFO] choreographer.utils._tmpfile: shutil.rmtree worked.
+2026-06-23 23:01:07.395 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.520 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.567 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.594 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.640 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.675 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.742 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.779 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.801 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.821 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.864 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.900 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.957 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:07.991 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.016 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.036 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.075 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.113 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.201 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.238 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.264 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.286 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.326 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.362 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:01:08.384 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:01 [INFO] aurassure_api: Listando locais: GET /clients/17429/applications/16/things/list
+2026-06-23 23:02:03 [INFO] aurassure_api: 4 local(is) encontrado(s): [('Campus Castanhal', 40303), ('Campus Santarem', 29067), ('Campus Itaituba', 28463), ('Campus Monte Alegre', 25248)]
+2026-06-23 23:02:04.329 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1345, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1339, in main
+    tela_relatorio(df, mapa, rot, modo_rel)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1160, in tela_relatorio
+    st.plotly_chart(g_ranking_locais(df, mapa, "aqi", "Campus com menor AQI medio"), use_container_width=True, key="ranking_aqi")
+                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 322, in g_ranking_locais
+    fig.update_layout(
+    ~~~~~~~~~~~~~~~~~^
+        **layout_ranking,
+        ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        margin=dict(l=92, r=44, t=56, b=58),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: plotly.graph_objs._figure.Figure.update_layout() got multiple values for keyword argument 'margin'
+2026-06-23 23:02:22.086 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Maroth\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1345, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1339, in main
+    tela_relatorio(df, mapa, rot, modo_rel)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 1160, in tela_relatorio
+    st.plotly_chart(g_ranking_locais(df, mapa, "aqi", "Campus com menor AQI medio"), use_container_width=True, key="ranking_aqi")
+                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maroth\Desktop\pedro\bolsa\last version 2.0\app.py", line 322, in g_ranking_locais
+    fig.update_layout(
+    ~~~~~~~~~~~~~~~~~^
+        **layout_ranking,
+        ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        margin=dict(l=92, r=44, t=56, b=58),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: plotly.graph_objs._figure.Figure.update_layout() got multiple values for keyword argument 'margin'
+2026-06-23 23:02:53.947 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.087 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.129 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.158 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.223 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.262 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.349 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.407 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.436 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.476 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.578 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.773 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.887 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.926 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:54.997 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.020 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.072 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.150 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.248 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.336 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.364 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.392 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.441 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.491 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:02:55.513 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:07 [INFO] aurassure_api: Listando locais: GET /clients/17429/applications/16/things/list
+2026-06-23 23:14:09 [INFO] aurassure_api: 4 local(is) encontrado(s): [('Campus Castanhal', 40303), ('Campus Santarem', 29067), ('Campus Itaituba', 28463), ('Campus Monte Alegre', 25248)]
+2026-06-23 23:14:10 [INFO] aurassure_api: Buscando dados: things=[40303] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:14:12 [INFO] aurassure_api: Normalizado: 0 linhas de 0 registros.
+2026-06-23 23:14:12 [INFO] aurassure_api: Buscando dados: things=[29067] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:14:18 [INFO] aurassure_api: Normalizado: 25676 linhas de 2568 registros.
+2026-06-23 23:14:18 [INFO] aurassure_api: Buscando dados: things=[28463] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:14:23 [INFO] aurassure_api: Normalizado: 11128 linhas de 1433 registros.
+2026-06-23 23:14:23 [INFO] aurassure_api: Buscando dados: things=[25248] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:14:28 [INFO] aurassure_api: Normalizado: 20812 linhas de 2675 registros.
+2026-06-23 23:14:28.976 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.083 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.127 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.156 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.205 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.243 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.314 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.350 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.373 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.395 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.436 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.474 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.532 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.568 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.591 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.614 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.652 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.693 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.767 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.799 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.820 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.841 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.874 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.907 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:14:29.923 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:05 [INFO] aurassure_api: Buscando dados: things=[40303] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:21:07 [INFO] aurassure_api: Normalizado: 0 linhas de 0 registros.
+2026-06-23 23:21:07 [INFO] aurassure_api: Buscando dados: things=[29067] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:21:12 [INFO] aurassure_api: Normalizado: 25676 linhas de 2568 registros.
+2026-06-23 23:21:12 [INFO] aurassure_api: Buscando dados: things=[28463] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:21:17 [INFO] aurassure_api: Normalizado: 11128 linhas de 1433 registros.
+2026-06-23 23:21:17 [INFO] aurassure_api: Buscando dados: things=[25248] | 2026-05-01 \u2192 2026-05-31
+2026-06-23 23:21:23 [INFO] aurassure_api: Normalizado: 20812 linhas de 2675 registros.
+2026-06-23 23:21:23.537 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.651 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.688 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.713 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.756 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.788 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.850 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.883 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.905 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.924 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.959 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:23.993 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.045 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.078 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.098 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.119 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.155 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.189 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.246 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.278 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.300 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.319 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.355 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.387 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-23 23:21:24.405 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.

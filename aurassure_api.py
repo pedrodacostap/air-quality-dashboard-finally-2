@@ -61,7 +61,12 @@ class _Sessao:
     obtido_em:  float = 0.0
 
     def valida(self) -> bool:
-        return bool(self.auth_token) and (time.time() - self.obtido_em) < TOKEN_TTL
+        # A API da Aurassure exige os dois: auth_token + PHPSESSID.
+        return (
+            bool(self.auth_token)
+            and bool(self.phpsessid)
+            and (time.time() - self.obtido_em) < TOKEN_TTL
+        )
 
     def salvar(self, auth_token: str, phpsessid: str, client_id: int = 0, user_nome: str = ""):
         self.auth_token = auth_token
@@ -133,21 +138,44 @@ def autenticar(email: str, senha: str) -> str:
     except ValueError:
         body = {}
 
-    # auth_token — vem no body JSON
-    auth_token = (
-        body.get("auth_token")
-        or body.get("token")
-        or body.get("access_token")
-        or ""
+    def _buscar_chave(obj, nomes):
+        """Procura chaves possíveis também em JSON aninhado."""
+        if isinstance(obj, dict):
+            for n in nomes:
+                if obj.get(n):
+                    return obj.get(n)
+            for v in obj.values():
+                achou = _buscar_chave(v, nomes)
+                if achou:
+                    return achou
+        elif isinstance(obj, list):
+            for v in obj:
+                achou = _buscar_chave(v, nomes)
+                if achou:
+                    return achou
+        return ""
+
+    # auth_token — normalmente vem no body JSON, às vezes dentro de data/user/session.
+    auth_token = str(_buscar_chave(body, ["auth_token", "session_id", "token", "access_token", "jwt"]) or "").strip()
+
+    # PHPSESSID — normalmente vem no cookie Set-Cookie.
+    phpsessid = (
+        resp.cookies.get("PHPSESSID")
+        or resp.cookies.get("phpsessid")
+        or str(_buscar_chave(body, ["PHPSESSID", "phpsessid"]) or "").strip()
     )
 
-    # PHPSESSID — vem no cookie Set-Cookie
-    phpsessid = resp.cookies.get("PHPSESSID") or body.get("session_id") or ""
-
-    if not auth_token and not phpsessid:
+    if not auth_token or not phpsessid:
+        faltando = []
+        if not auth_token:
+            faltando.append("session_id/auth_token")
+        if not phpsessid:
+            faltando.append("PHPSESSID")
         raise ErroAutenticacao(
-            "Login retornou HTTP 200 mas nem auth_token nem PHPSESSID foram encontrados. "
-            f"Chaves recebidas: {list(body.keys())}"
+            "Login respondeu, mas faltou: " + ", ".join(faltando) + ". "
+            "A API exige session_id/auth_token e PHPSESSID juntos. "
+            f"Chaves recebidas no JSON: {list(body.keys())}; "
+            f"cookies recebidos: {list(resp.cookies.keys())}"
         )
 
     cid  = body.get("client_id", 0)
@@ -217,6 +245,8 @@ def listar_dispositivos(
     if resp.status_code == 401:
         _sessao.limpar()
         autenticar(email, senha)
+        cid = client_id or _sessao.client_id or CLIENT_ID
+        url = f"{BASE_URL}/clients/{cid}/applications/{aid}/things/list"
         resp = requests.get(url, headers=_headers_auth(), timeout=20)
 
     if resp.status_code != 200:
@@ -376,11 +406,11 @@ def normalizar_resposta(raw: Dict[str, Any]) -> list:
 # ─────────────────────────────────────────────
 
 def intervalo_unix_mensal(ano: int, mes: int):
+    """Retorna início e fim do mês em Unix timestamp UTC."""
     _, ultimo_dia = calendar.monthrange(ano, mes)
-    return (
-        int(datetime(ano, mes, 1, 0, 0, 0).timestamp()),
-        int(datetime(ano, mes, ultimo_dia, 23, 59, 59).timestamp()),
-    )
+    inicio = datetime(ano, mes, 1, 0, 0, 0, tzinfo=timezone.utc)
+    fim = datetime(ano, mes, ultimo_dia, 23, 59, 59, tzinfo=timezone.utc)
+    return int(inicio.timestamp()), int(fim.timestamp())
 
 
 def _f(v) -> Optional[float]:
