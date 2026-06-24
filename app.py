@@ -939,10 +939,10 @@ def sidebar():
         st.markdown("---")
 
         st.markdown("<div style='font-size:.68rem;color:#3a9458;font-family:Space Mono,monospace;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem'>Acesso</div>", unsafe_allow_html=True)
-        email = st.text_input("E-mail", value=os.getenv("AURASSURE_EMAIL","lambdaufopa@gmail.com"),
+        email = st.text_input("E-mail", value="",
                               placeholder="seu@email.com", label_visibility="collapsed")
         st.caption("E-mail da plataforma Aurassure")
-        senha = st.text_input("Senha", value=os.getenv("AURASSURE_PASSWORD","L@mbda2025"),
+        senha = st.text_input("Senha", value="",
                               type="password", placeholder="Senha", label_visibility="collapsed")
         st.caption("Senha")
 
